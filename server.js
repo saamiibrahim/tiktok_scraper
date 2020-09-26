@@ -19,7 +19,7 @@ const options = {
   hdVideo: false,
 };
 
-router.get('/' , async(req,res) => {
+app.get('/' , async(req,res) => {
   try{
   const welcome = "<h1>Welcome</h1>";
   res.json(welcome);
