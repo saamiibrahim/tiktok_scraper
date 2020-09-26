@@ -19,6 +19,17 @@ const options = {
   hdVideo: false,
 };
 
+router.get('/' , async(req,res) => {
+  try{
+  const welcome = "<h1>Welcome</h1>";
+  res.json(welcome);
+  }catch(err){
+      res.json({message : err});
+  }
+  });
+
+
+
 app.get('/api' , async(req,res) => {
   try{
   const video_url = req.query.video_url;
